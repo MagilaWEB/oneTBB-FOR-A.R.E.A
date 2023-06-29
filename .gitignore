@@ -65,3 +65,8 @@ CMakeSettings.json
 /src/tbbmalloc_proxy/tbbmalloc_proxy.dir
 /x64
 /X64_Release
+/src/tbbmalloc/Release
+/src/tbbmalloc_proxy/Release
+/src/tbb/Release
+/Win32/Release/ZERO_CHECK
+/X32_Release
