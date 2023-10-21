@@ -45,10 +45,10 @@ if /i "%1"=="vs2022"       (set TBB_TARGET_VS=vc14)       & shift & goto ParseAr
 if /i "%1"=="all"          (set TBB_TARGET_VS=vc_mt)      & shift & goto ParseArgs
 
 :SetEnv
-if exist "%TBBROOT%\redist\%TBB_TARGET_ARCH%\%TBB_TARGET_VS%\tbb12.dll" (
+if exist "%TBBROOT%\redist\%TBB_TARGET_ARCH%\%TBB_TARGET_VS%\one_tbb.dll" (
     set "TBB_DLL_PATH=%TBBROOT%\redist\%TBB_TARGET_ARCH%\%TBB_TARGET_VS%"
 )
-if exist "%TBBROOT%\..\redist\%TBB_TARGET_ARCH%\tbb\%TBB_TARGET_VS%\tbb12.dll" (
+if exist "%TBBROOT%\..\redist\%TBB_TARGET_ARCH%\tbb\%TBB_TARGET_VS%\one_tbb.dll" (
     set "TBB_DLL_PATH=%TBBROOT%\..\redist\%TBB_TARGET_ARCH%\tbb\%TBB_TARGET_VS%"
 )
 

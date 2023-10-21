@@ -20,5 +20,5 @@ Name: oneAPI Threading Building Blocks (oneTBB)
 Description: C++ library for parallel programming on multi-core processors.
 URL: https://github.com/oneapi-src/oneTBB
 Version: 2021.10.0
-Libs: -L${libdir}  -ltbb12
+Libs: -L${libdir}  -lone_tbb
 Cflags: -I${includedir}

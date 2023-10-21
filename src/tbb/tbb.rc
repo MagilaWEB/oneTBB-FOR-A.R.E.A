@@ -57,9 +57,9 @@ BEGIN
             VALUE "LegalCopyright", "Copyright 2005-2023 Intel Corporation.  All Rights Reserved.\0"
             VALUE "LegalTrademarks", "\0"
 #ifndef TBB_USE_DEBUG
-            VALUE "OriginalFilename", "tbb12.dll\0"
+            VALUE "OriginalFilename", "one_tbb.dll\0"
 #else
-            VALUE "OriginalFilename", "tbb12_debug.dll\0"
+            VALUE "OriginalFilename", "one_tbb_debug.dll\0"
 #endif
             VALUE "ProductName", "oneAPI Threading Building Blocks (oneTBB)\0"
             VALUE "ProductVersion", TBB_VERSION "\0"
