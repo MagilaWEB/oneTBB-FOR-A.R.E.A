@@ -58,6 +58,7 @@
 #include "oneapi/tbb/parallel_reduce.h"
 #include "oneapi/tbb/parallel_scan.h"
 #include "oneapi/tbb/parallel_sort.h"
+#include "oneapi/tbb/parallel_find.h"
 #include "oneapi/tbb/partitioner.h"
 #include "oneapi/tbb/queuing_mutex.h"
 #include "oneapi/tbb/queuing_rw_mutex.h"
