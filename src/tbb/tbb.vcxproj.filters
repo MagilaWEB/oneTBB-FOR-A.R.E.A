@@ -96,9 +96,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="I:\TBB\src\tbb\CMakeLists.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="I:\TBB\src\tbb\tbb.rc">
       <Filter>Source Files</Filter>
     </ResourceCompile>
