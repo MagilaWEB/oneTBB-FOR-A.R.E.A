@@ -94,6 +94,9 @@
     <ClCompile Include="I:\TBB\src\tbb\queuing_rw_mutex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="tcm_adaptor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="I:\TBB\src\tbb\tbb.rc">

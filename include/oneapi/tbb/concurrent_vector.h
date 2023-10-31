@@ -767,7 +767,7 @@ private:
     }
 
     static void zero_unconstructed_elements( pointer start, size_type count ) {
-        memset(static_cast<void *>(start), 0, count * sizeof(value_type));
+        std::memset(static_cast<void *>(start), 0, count * sizeof(value_type));
     }
 
     template <typename... Args>

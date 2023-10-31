@@ -315,6 +315,7 @@
     <ClCompile Include="I:\TBB\src\tbb\threading_control.cpp" />
     <ClCompile Include="I:\TBB\src\tbb\version.cpp" />
     <ClCompile Include="I:\TBB\src\tbb\queuing_rw_mutex.cpp" />
+    <ClCompile Include="tcm_adaptor.cpp" />
     <ResourceCompile Include="I:\TBB\src\tbb\tbb.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

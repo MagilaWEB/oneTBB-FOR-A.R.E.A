@@ -16,7 +16,7 @@
 
 #ifndef __TBB_parallel_sort_H
 #define __TBB_parallel_sort_H
-#pragma warning (disable: 4180)
+
 #include "detail/_namespace_injection.h"
 #include "parallel_for.h"
 #include "blocked_range.h"
