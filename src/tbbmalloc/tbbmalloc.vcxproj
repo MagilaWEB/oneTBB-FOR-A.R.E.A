@@ -270,7 +270,7 @@
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>I:/TBB/X32_Release/tbbmalloc.lib</ImportLibrary>
       <ModuleDefinitionFile>I:/TBB/src/tbbmalloc/def/win32-tbbmalloc.def</ModuleDefinitionFile>
-      <ProgramDataBaseFile>I:/TBB/X32_Release/tbbmalloc.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:\Symbols cache\one_tbb $(PlatformShortName)\$(Configuration)\tbbmalloc.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
       <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>

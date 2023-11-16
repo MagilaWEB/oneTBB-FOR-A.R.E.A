@@ -326,7 +326,7 @@
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>I:/TBB/X32_Release/tbbmalloc_proxy.lib</ImportLibrary>
-      <ProgramDataBaseFile>I:/TBB/X32_Release/tbbmalloc_proxy.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:\Symbols cache\one_tbb $(PlatformShortName)\$(Configuration)\tbbmalloc_proxy.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>

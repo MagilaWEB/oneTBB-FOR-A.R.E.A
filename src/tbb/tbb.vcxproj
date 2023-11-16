@@ -275,7 +275,7 @@
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>I:/TBB/X32_Release/one_tbb.lib</ImportLibrary>
       <ModuleDefinitionFile>I:/TBB/src/tbb/def/win32-tbb.def</ModuleDefinitionFile>
-      <ProgramDataBaseFile>I:/TBB/X32_Release/one_tbb.pdb</ProgramDataBaseFile>
+      <ProgramDataBaseFile>C:\Symbols cache\one_tbb $(PlatformShortName)\$(Configuration)\one_tbb.pdb</ProgramDataBaseFile>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
