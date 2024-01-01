@@ -99,7 +99,35 @@ class alignas(max_nfs_size) stack_size_control : public control_storage {
 #if _WIN32_WINNT >= 0x0602 /* _WIN32_WINNT_WIN8 */
         static auto ThreadStackSizeDefault = [] {
             ULONG_PTR hi, lo;
-            GetCurrentThreadStackLimits(&lo, &hi);
+
+            auto GetCurrentThreadStackLimits_old = [&](_Out_ PULONG_PTR LowLimit, _Out_ PULONG_PTR HighLimit)
+            {
+                static void (WINAPI * GetCurrentThreadStackLimits)(PULONG_PTR, PULONG_PTR);
+
+                if (!GetCurrentThreadStackLimits)
+                {
+                    *(void**)&GetCurrentThreadStackLimits = GetProcAddress(GetModuleHandle("kernel32"), "GetCurrentThreadStackLimits");
+
+                    if (!GetCurrentThreadStackLimits)
+                    {
+                        NT_TIB* tib = (NT_TIB*)NtCurrentTeb();
+                        *HighLimit = (ULONG_PTR)tib->StackBase;
+
+                        MEMORY_BASIC_INFORMATION mbi;
+                        if (VirtualQuery(tib->StackLimit, &mbi, sizeof(mbi)))
+                        {
+                            *LowLimit = (ULONG_PTR)mbi.AllocationBase;
+                            return;
+                        }
+
+                        return;
+                    }
+                }
+
+                GetCurrentThreadStackLimits(LowLimit, HighLimit);
+            };
+
+            GetCurrentThreadStackLimits_old(&lo, &hi);
             return hi - lo;
         }();
         return ThreadStackSizeDefault;
